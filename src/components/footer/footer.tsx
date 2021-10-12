@@ -12,19 +12,19 @@ function MsFooter({
     <div className="ms-footer">
       <ul className="ms-footer__menu">
         <li className="ms-footer__menupoint">
-          <a className="ms-footer__link" href="#">
+          <a className="ms-footer__link" href="https://docs.matrixswap.io/" target="_blank">
             <MenuBookOutlined />
             Documents
           </a>
         </li>
         <li className="ms-footer__menupoint">
-          <a className="ms-footer__link" href="#">
+          <a className="ms-footer__link" href="https://t.me/matrixswapofficial" target="_blank">
             <Telegram />
             Telegram
           </a>
         </li>
         <li className="ms-footer__menupoint">
-          <a className="ms-footer__link" href="#">
+          <a className="ms-footer__link" href="https://matrixswap.netlify.app/analytics" target="_blank">
             <BarChartSharp />
             Analytics
           </a>

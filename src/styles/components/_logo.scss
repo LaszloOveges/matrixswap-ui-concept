@@ -1,4 +1,14 @@
 .ms-logo {
+  position: relative;
   display: inline-flex;
   height: rem(32);
+  opacity: 0;
+  transition: all 0.2s ease-out 0.2s;
+}
+
+.ms-init {
+
+  .ms-logo {
+    opacity: 1;
+  }
 }

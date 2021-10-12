@@ -10,6 +10,9 @@
   background: linear-gradient(36deg, $ui_color_swap_bg_gradient 0%, $ui_color_swap_bg 100%);
   border-radius: rem(24);
   box-shadow: 0 rem(24) rem(18) rem(-12) $ui_color_swap_shadow;
+  opacity: 0;
+  transform: translate3d(0, rem(50), 0);
+  transition: all 0.3s ease-out 0s;
 
   &__content {
     position: relative;
@@ -115,5 +118,13 @@
 
   &__button.MuiButton-root {
     font-size: rem(20);
+  }
+}
+
+.ms-init {
+
+  .ms-swap {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
   }
 }

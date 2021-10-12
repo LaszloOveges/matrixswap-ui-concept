@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { createTheme, ThemeProvider } from '@mui/material';
 
 import MsLayout from './components/layout/layout';
@@ -14,6 +15,11 @@ const theme = createTheme({
 });
 
 function App() {
+  useEffect(() => {
+    setTimeout(() =>{
+      document.body.classList.add('ms-init');
+    }, 1);
+  }, []);
   return (
     <ThemeProvider theme={theme}>
       <MsLayout />

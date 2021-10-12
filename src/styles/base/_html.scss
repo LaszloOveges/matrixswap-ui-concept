@@ -1,0 +1,24 @@
+html {
+  height: 100%;
+  font-size: map-get($typo, "size") * 1px;
+}
+
+body,
+body * {
+  box-sizing: border-box;
+}
+
+;
+
+body {
+  position: relative;
+  height: auto;
+  color: $ui_color_text;
+  background-color: $ui_color_body_bg;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

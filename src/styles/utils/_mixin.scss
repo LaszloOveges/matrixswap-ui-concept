@@ -1,0 +1,31 @@
+@mixin screenSize($media) {
+
+  @if $media == highres {
+    @media screen and (min-width: map-get($breakpoint, "normal_3")) {
+      @content;
+    }
+  } @else if $media == midres {
+    @media screen and (min-width: map-get($breakpoint, "normal_2")) {
+      @content;
+    }
+  } @else if $media == desktop {
+    @media screen and (min-width: map-get($breakpoint, "normal_1")) {
+      @content;
+    }
+  } @else if $media == tablet {
+    @media screen and (min-width: map-get($breakpoint, "medium_1")) {
+      @content;
+    }
+  }
+}
+
+@mixin inputShadow {
+  box-shadow: 0 0 rem(15) rgba($color_black, 0.08);
+}
+
+@mixin placeholderFont {
+  font-family: map-get($font, 'raleway');
+  font-size: rem(14);
+  font-style: italic;
+  font-weight: 400;
+}

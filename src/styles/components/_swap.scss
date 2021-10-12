@@ -1,0 +1,119 @@
+.ms-swap {
+  position: relative;
+  display: inline-flex;
+  margin: 0 auto;
+  width: 100%;
+  min-width: rem(300);
+  max-width: rem(640);
+  min-height: rem(300);
+  background: $ui_color_swap_bg;
+  background: linear-gradient(36deg, $ui_color_swap_bg_gradient 0%, $ui_color_swap_bg 100%);
+  border-radius: rem(24);
+  box-shadow: 0 rem(24) rem(18) rem(-12) $ui_color_swap_shadow;
+
+  &__content {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-flow: column;
+    padding: rem(16);
+    width: 100%;
+    min-height: 100%;
+  }
+  
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 rem(6);
+
+    &__info {
+
+    }
+
+    &__title {
+      margin: 0;
+      font-size: rem(24);
+      font-weight: 700;
+      letter-spacing: rem(1);
+    }
+
+    &__text {
+      margin: rem(6) 0;
+      opacity: .5;
+    }
+
+    &__settings {
+      margin: rem(4);
+      cursor: pointer;
+    }
+  }
+
+  &__base-container {
+    display: flex;
+    flex-flow: column;
+    margin: rem(10) 0 rem(1);
+  }
+
+  &__target-container {
+    display: flex;
+    flex-flow: column;
+    margin: rem(1) 0 rem(10);
+  }
+
+  &__separator {
+    position: relative;
+    margin: rem(18) 5%;
+    width: 90%;
+    height: rem(3);
+    background-color: $ui_color_separator_bg;
+    border-radius: rem(3);
+  }
+
+  &__switch {
+    position: absolute;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    top: rem(-18);
+    width: rem(36);
+    height: rem(36);
+    background-color: $ui_color_separator_bg;
+    border-radius: 50%;
+    transform: translateX(rem(-18));
+    cursor: pointer;
+
+    &__icon {
+      color: $ui_color_text_alt;
+    }
+  }
+
+  &__add-token {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: rem(16) auto;
+    padding: rem(8) rem(12);
+    min-height: rem(32);
+    border-radius: rem(18);
+    border: rem(1) dashed $ui_color_add_token_border;
+    color: $ui_color_add_token;
+    cursor: pointer;
+
+    svg {
+      width: rem(16);
+      height: rem(16);
+      margin: 0 rem(6) 0 0;
+    }
+  }
+
+  &__action {
+
+  }
+
+  &__button.MuiButton-root {
+    font-size: rem(20);
+  }
+}

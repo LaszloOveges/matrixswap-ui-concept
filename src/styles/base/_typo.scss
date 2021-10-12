@@ -1,0 +1,16 @@
+// @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+
+@font-face {
+    font-family: 'OcrA';
+    src: url('./../../assets/font/OcrA-Regular.woff2') format('woff2'),
+        url('./../../assets/font/OcrA-Regular.woff') format('woff'),
+        url('./../../assets/font/OcrA-Regular.svg#OcrA-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body * {
+    font-family: '#{map-get($typo, "font")}';
+    font-size: rem(map-get($typo, "size"));
+}

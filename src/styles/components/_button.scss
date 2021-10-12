@@ -1,0 +1,15 @@
+.ms-button {
+
+  &.MuiButton-root {
+    background: $ui_color_button_bg;
+    background: linear-gradient(36deg, $ui_color_button_bg 0%, $ui_color_button_bg_gradient 100%);
+    width: 100%;
+    border-radius: rem(24);
+    padding: rem(10) rem(12);
+    font-family: map-get($font, 'ocra');
+    font-weight: 700;
+    font-size: rem(18);
+    color: $ui_color_text;
+    text-transform: initial;
+  }
+}

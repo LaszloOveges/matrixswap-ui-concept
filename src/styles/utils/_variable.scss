@@ -1,0 +1,84 @@
+@use "sass:color";
+
+@import "./function";
+
+// FONTS
+$font: (
+  'ocra': 'OcrA',
+);
+
+// TYPO
+$typo: (
+  'font': map-get($font, 'ocra'),
+  'size': 16,
+  'weight': 400,
+);
+
+// BREAKPOINTS
+$breakpoint: (
+  'high_3': 3840px,
+  'high_2': 2560px,
+  'hight_1': 1920px,
+  'normal_3': 1650px,
+  'normal_2': 1366px,
+  'normal_1': 1024px,
+  'medium_3': 960px,
+  'medium_2': 872px,
+  'medium_1': 768px,
+  'low_3': 640px,
+  'low_2': 480px,
+  'low_1': 360px,
+);
+
+// Z-INDEX
+$z-index: (
+  'header': 25,
+);
+
+// COLORS
+// Colors must be in HSL(A)
+// Only use colors defined by css variables
+
+// Base colors:
+$color_richBlack: hsl(210, 50%, 1%);
+$color_jungleGreen: hsl(115, 32%, 8%);
+$color_yellowGreen: hsl(123, 71%, 40%);
+$color_malachiteGreen: hsl(123, 72%, 56%);
+$color_culturedWhite: hsl(0, 0%, 96%);
+
+$color_deepGrey: hsl(132, 12%, 8%);
+$color_asphaltGrey: hsl(188, 51%, 6%);
+$color_acidGreen: hsl(146, 53%, 20%);
+
+// UI colors:
+$ui_color_text: $color_culturedWhite;
+$ui_color_text_alt: $color_yellowGreen;
+$ui_color_text_alt2: $color_acidGreen;
+$ui_color_button_bg: $color_yellowGreen;
+$ui_color_button_bg_gradient: $color_malachiteGreen;
+$ui_color_body_bg: $color_richBlack;
+$ui_color_layout_bg: $color_deepGrey;
+$ui_color_layout_bg_beam_1: $color_acidGreen;
+$ui_color_layout_bg_beam_2: $color_asphaltGrey;
+$ui_color_swap_bg: $color_deepGrey;
+$ui_color_swap_bg_gradient: color.adjust($color_asphaltGrey, $alpha: -0.1);
+$ui_color_swap_shadow: color.adjust($color_richBlack, $alpha: -0.66);
+$ui_color_wallet_bg: color.adjust($color_richBlack, $alpha: -0.15);
+$ui_color_wallet_note_bg: $color_richBlack;
+$ui_color_wallet_info_bg: $color_acidGreen;
+$ui_color_wallet_shadow: $color_richBlack;
+$ui_color_separator_bg: $color_richBlack;
+$ui_color_base_token_bg: $color_yellowGreen;
+$ui_color_base_token_bg_gradient: $color_malachiteGreen;
+$ui_color_target_token_bg: color.adjust($color_asphaltGrey, $lightness: 2%);
+$ui_color_target_token_bg_gradient: color.adjust($color_asphaltGrey, $lightness: 6%);
+$ui_color_currency_bg: color.adjust($color_richBlack, $alpha: -0.8);
+$ui_color_add_token: $color_acidGreen;
+$ui_color_add_token_border: $color_acidGreen;
+$ui_color_token_input_bg: color.adjust($color_richBlack, $alpha: -0.9);
+$ui_color_token_select_bg: color.adjust($color_richBlack, $alpha: -0.9);
+$ui_color_footer_text: $color_culturedWhite;
+
+// $ui_color_status_success: $color_green;
+// $ui_color_status_error: $color_red;
+// $ui_color_status_warning: $color_blue;

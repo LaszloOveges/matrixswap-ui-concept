@@ -1,0 +1,15 @@
+.ms-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: rem(24) rem(24) rem(46) rem(36);
+  width: 100%;
+
+  &__logo {
+
+  }
+
+  &__wallet {
+    position: relative;
+  }
+}

@@ -1,0 +1,39 @@
+.ms-input {
+
+  &.MuiInput-root {
+    padding: 0;
+    background-color: $ui_color_token_input_bg;
+    border-radius: rem(8);
+    color: $ui_color_text;
+    font-family: map-get($font, 'ocra');
+    font-size: rem(18);
+    font-weight: 700;
+  }
+
+  .MuiInput-input {
+    padding: rem(6) rem(18);
+
+    &[type='number'] {
+      padding-right: rem(9);
+    }
+  }
+
+  &--right {
+
+    .MuiInput-input {
+      text-align: right;
+    }
+  }
+
+  &--readonly {
+
+    &.MuiInput-root {
+      background-color: transparent;
+    }
+
+    &.MuiInput-root,
+    .MuiInput-input {
+      cursor: not-allowed;
+    }
+  }
+}

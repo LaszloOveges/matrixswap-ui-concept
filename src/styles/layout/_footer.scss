@@ -1,0 +1,36 @@
+.ms-footer {
+  justify-self: flex-end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  padding: rem(76) rem(12) rem(24);
+  width: 100%;
+  
+  &__menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__menupoint {
+    padding: rem(6) rem(18);
+    opacity: .5;;
+  }
+
+  &__link {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: $ui_color_footer_text;
+    font-size: rem(14);
+    text-decoration: none;
+    cursor: pointer;
+
+    svg {
+      margin: 0 rem(6) 0 0;
+      width: rem(16);
+      height: rem(16);
+    }
+  }
+}

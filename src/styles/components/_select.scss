@@ -1,0 +1,22 @@
+.ms-select {
+
+  &.MuiSelect-root {
+    background-color: $ui_color_token_select_bg;
+    border-radius: rem(8);
+    color: $ui_color_text;
+  }
+
+  .MuiSelect-select {
+    padding-left: rem(18);
+    padding-top: rem(6);
+    padding-bottom: rem(6);
+    font-family: map-get($font, 'ocra');
+    font-size: rem(18);
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .MuiOutlinedInput-notchedOutline {
+    border: none;
+  }
+}

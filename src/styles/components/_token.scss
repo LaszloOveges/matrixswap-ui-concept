@@ -1,0 +1,154 @@
+.ms-token {
+  $token: &;
+  position: relative;
+  display: flex;
+  margin: rem(6) 0;
+  width: 100%;
+  min-height: rem(64);
+  border-radius: rem(18);
+  box-shadow: 0 rem(24) rem(18) rem(-12) $ui_color_swap_shadow;
+  overflow: hidden;
+
+  &--base {
+    background: $ui_color_base_token_bg;
+    background: linear-gradient(36deg, $ui_color_base_token_bg 0%, $ui_color_base_token_bg_gradient 100%);
+  }
+
+  &--target {
+    background: $ui_color_target_token_bg;
+    background: linear-gradient(36deg, $ui_color_target_token_bg 0%, $ui_color_target_token_bg_gradient 100%);
+  }
+
+  &__currency {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: rem(12);
+    width: 15%;
+    min-width: rem(72);
+    background-color: $ui_color_currency_bg;
+
+    &__icon {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: rem(48);
+      height: rem(48);
+      background-color: $ui_color_currency_bg;
+      border-radius: 50%;
+
+      &__img {
+        width: rem(36);
+        height: rem(36);
+        border-radius: 50%;
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex: 1;
+    padding: rem(8) rem(16);
+    height: 100%;
+  }
+
+  &__info {
+    flex: 1;
+  }
+
+  &__name {
+    margin: rem(6) 0;
+  
+    .MuiSelect-select {
+      padding-top: rem(10);
+      padding-bottom: rem(10);
+      font-size: rem(20);
+      line-height: rem(28);
+    }
+  }
+
+  &__balance {
+    margin: rem(4) 0 rem(10);
+    padding: 0 rem(16);
+    font-size: rem(14);
+    opacity: .33;
+  }
+
+  &__control {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    padding: 0 0 0 rem(16);
+    height: 100%;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: rem(12);
+      bottom: rem(12);
+      width: rem(2);
+      background-color: $ui_color_token_select_bg;
+    }
+
+    &__field {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+    }
+
+    &__input {
+
+    }
+
+    &__slider {
+      margin: rem(-18) 0 0;
+    }
+  }
+
+  &__base-value {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: rem(-2) 0 rem(6);
+    padding: 0 0 0 rem(16);
+    font-size: rem(14);
+    text-align: right;
+    opacity: .33;
+
+    svg {
+      width: rem(16);
+      height: rem(16);
+      margin: 0 0 0 rem(6);
+    }
+  }
+
+  &__value {
+
+    &.MuiInput-root {  
+      margin: rem(6) 0;
+      width: 100%;
+      border-radius: rem(8) rem(8) 0 0;
+    }
+
+
+    &.ms-input--readonly {    
+      font-size: rem(24);
+    }
+  }
+
+
+
+  &--base {
+
+    #{$token}__balance,
+    #{$token}__base-value {
+      color: $ui_color_text_alt2;
+      opacity: .66;
+    }
+  }
+}
